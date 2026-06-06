@@ -21,11 +21,11 @@
       --wire: #6B4A2A;
       --track: #3A2410;
     }
- 
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
- 
+
     html { scroll-behavior: smooth; }
- 
+
     body {
       font-family: 'DM Sans', sans-serif;
       background: var(--cream);
@@ -33,7 +33,7 @@
       overflow-x: hidden;
       cursor: none;
     }
- 
+
     /* Custom cursor as bead */
     .cursor {
       width: 22px; height: 22px;
@@ -59,7 +59,7 @@
       transition: all 0.18s ease;
       opacity: 0.7;
     }
- 
+
     /* ─── NAVBAR ─────────────────────────────── */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
@@ -74,7 +74,7 @@
       border-bottom: 3px solid var(--wood);
       box-shadow: 0 2px 30px rgba(26,18,9,0.1);
     }
- 
+
     .nav-logo {
       font-family: 'Playfair Display', serif;
       font-size: 26px;
@@ -86,7 +86,7 @@
       align-items: center;
       gap: 10px;
     }
- 
+
     /* Mini abacus in logo */
     .logo-abacus {
       display: flex; flex-direction: column; gap: 3px;
@@ -101,7 +101,7 @@
       transition: transform 0.15s;
     }
     .logo-bead:hover { transform: scale(1.4); }
- 
+
     .nav-links {
       display: flex; gap: 36px; list-style: none;
     }
@@ -124,7 +124,7 @@
       transition: width 0.25s ease;
     }
     .nav-links a:hover::after { width: 100%; }
- 
+
     .nav-cta {
       background: var(--red);
       color: #fff !important;
@@ -136,7 +136,7 @@
     }
     .nav-cta:hover { background: var(--dark) !important; transform: translateY(-1px); }
     .nav-cta::after { display: none !important; }
- 
+
     /* ─── HERO ────────────────────────────────── */
     #hero {
       min-height: 100vh;
@@ -149,7 +149,7 @@
       overflow: hidden;
       background: var(--cream);
     }
- 
+
     .hero-bg-pattern {
       position: absolute; inset: 0;
       background-image:
@@ -157,14 +157,14 @@
         repeating-linear-gradient(0deg, rgba(139,94,60,0.06) 0px, rgba(139,94,60,0.06) 1px, transparent 1px, transparent 80px);
       pointer-events: none;
     }
- 
+
     .hero-content {
       text-align: center;
       position: relative;
       z-index: 2;
       max-width: 800px;
     }
- 
+
     .hero-badge {
       display: inline-block;
       background: var(--wood);
@@ -177,7 +177,7 @@
       margin-bottom: 24px;
       font-weight: 600;
     }
- 
+
     .hero-title {
       font-family: 'Playfair Display', serif;
       font-size: clamp(64px, 10vw, 120px);
@@ -188,7 +188,7 @@
       margin-bottom: 10px;
     }
     .hero-title span { color: var(--red); }
- 
+
     .hero-sub {
       font-family: 'Playfair Display', serif;
       font-size: clamp(18px, 3vw, 28px);
@@ -197,7 +197,7 @@
       margin-bottom: 28px;
       letter-spacing: 1px;
     }
- 
+
     .hero-desc {
       font-size: 17px;
       line-height: 1.7;
@@ -205,7 +205,7 @@
       max-width: 560px;
       margin: 0 auto 40px;
     }
- 
+
     .hero-btns {
       display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
     }
@@ -247,7 +247,7 @@
       color: var(--cream);
       transform: translateY(-3px);
     }
- 
+
     /* ─── FULL INTERACTIVE ABACUS ─────────────── */
     #interactive-abacus {
       padding: 80px 40px;
@@ -255,7 +255,7 @@
       position: relative;
       overflow: hidden;
     }
- 
+
     .section-label {
       text-align: center;
       font-size: 11px;
@@ -265,7 +265,7 @@
       margin-bottom: 12px;
       font-weight: 600;
     }
- 
+
     .section-title {
       font-family: 'Playfair Display', serif;
       font-size: clamp(32px, 5vw, 54px);
@@ -274,10 +274,10 @@
       line-height: 1.1;
       margin-bottom: 16px;
     }
- 
+
     .abacus-title { color: var(--cream); }
     .abacus-title span { color: var(--gold); }
- 
+
     .abacus-subtitle {
       text-align: center;
       color: #9A8070;
@@ -285,14 +285,14 @@
       max-width: 500px;
       margin: 0 auto 50px;
     }
- 
+
     /* THE ABACUS FRAME */
     .abacus-wrapper {
       max-width: 850px;
       margin: 0 auto;
       position: relative;
     }
- 
+
     .abacus-frame {
       background: linear-gradient(135deg, #7A4F2A 0%, #5C3A1A 40%, #7A4F2A 100%);
       border-radius: 18px;
@@ -304,7 +304,7 @@
         inset 0 2px 4px rgba(255,220,150,0.2);
       position: relative;
     }
- 
+
     /* Wood grain texture */
     .abacus-frame::before {
       content: '';
@@ -319,7 +319,7 @@
       );
       pointer-events: none;
     }
- 
+
     .abacus-divider {
       height: 14px;
       background: linear-gradient(90deg, #5C3A1A, #9A6030, #C4894A, #9A6030, #5C3A1A);
@@ -329,13 +329,13 @@
       position: relative;
       z-index: 2;
     }
- 
+
     .abacus-rods {
       display: flex;
       gap: 0;
       justify-content: center;
     }
- 
+
     .abacus-col {
       display: flex;
       flex-direction: column;
@@ -344,7 +344,7 @@
       position: relative;
       padding: 0 4px;
     }
- 
+
     /* The rod/wire */
     .abacus-col::before {
       content: '';
@@ -357,7 +357,7 @@
       border-radius: 2px;
       box-shadow: inset 0 0 4px rgba(0,0,0,0.5), 0 0 8px rgba(0,0,0,0.3);
     }
- 
+
     .upper-section {
       padding: 10px 0 6px;
       display: flex;
@@ -365,7 +365,7 @@
       align-items: center;
       gap: 4px;
     }
- 
+
     .lower-section {
       padding: 6px 0 10px;
       display: flex;
@@ -373,7 +373,7 @@
       align-items: center;
       gap: 4px;
     }
- 
+
     /* BEAD */
     .bead {
       width: 40px;
@@ -389,12 +389,12 @@
         inset 0 2px 4px rgba(255,255,255,0.25),
         inset 0 -2px 4px rgba(0,0,0,0.3);
     }
- 
+
     .bead:hover {
       transform: scale(1.1);
       filter: brightness(1.15);
     }
- 
+
     /* Bead colors per column */
     .col-0 .bead { background: radial-gradient(circle at 35% 35%, #E87060, var(--bead-red), #8B1A0A); }
     .col-1 .bead { background: radial-gradient(circle at 35% 35%, #5080D0, var(--bead-blue), #1A3070); }
@@ -405,10 +405,10 @@
     .col-6 .bead { background: radial-gradient(circle at 35% 35%, #D4B050, #C09020, #705010); }
     .col-7 .bead { background: radial-gradient(circle at 35% 35%, #60B080, var(--bead-green), #1A5030); }
     .col-8 .bead { background: radial-gradient(circle at 35% 35%, #5080D0, var(--bead-blue), #1A3070); }
- 
+
     .bead.active-upper { transform: translateY(12px) !important; }
     .bead.active-lower { transform: translateY(-12px) !important; }
- 
+
     /* Column value labels */
     .col-label {
       color: var(--gold);
@@ -419,7 +419,7 @@
       margin-top: 6px;
       font-family: 'DM Sans', sans-serif;
     }
- 
+
     .abacus-display {
       text-align: center;
       margin-top: 30px;
@@ -437,7 +437,7 @@
       margin-top: 6px;
       letter-spacing: 1px;
     }
- 
+
     .abacus-reset-btn {
       margin-top: 20px;
       background: transparent;
@@ -457,7 +457,7 @@
       background: var(--gold);
       color: var(--dark);
     }
- 
+
     /* ─── STATS BAR ───────────────────────────── */
     #stats {
       background: var(--red);
@@ -467,7 +467,7 @@
       gap: 0;
       flex-wrap: wrap;
     }
- 
+
     .stat-item {
       text-align: center;
       padding: 20px 60px;
@@ -475,7 +475,7 @@
       position: relative;
     }
     .stat-item:last-child { border-right: none; }
- 
+
     /* Decorative mini beads in stats */
     .stat-beads {
       display: flex; gap: 5px; justify-content: center; margin-bottom: 10px;
@@ -486,7 +486,7 @@
       background: rgba(255,255,255,0.4);
     }
     .stat-bead.lit { background: rgba(255,255,255,0.95); }
- 
+
     .stat-number {
       font-family: 'Playfair Display', serif;
       font-size: 48px;
@@ -502,22 +502,22 @@
       margin-top: 6px;
       font-weight: 500;
     }
- 
+
     /* ─── FEATURES ────────────────────────────── */
     #features {
       padding: 100px 60px;
       background: var(--cream);
     }
- 
+
     .features-header {
       max-width: 600px;
       margin: 0 auto 70px;
       text-align: center;
     }
- 
+
     .section-title-dark { color: var(--dark); }
     .section-title-dark span { color: var(--red); }
- 
+
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -525,7 +525,7 @@
       max-width: 1100px;
       margin: 0 auto;
     }
- 
+
     .feature-card {
       background: #fff;
       border-radius: 16px;
@@ -552,7 +552,7 @@
       border-color: rgba(217,79,61,0.15);
     }
     .feature-card:hover::before { transform: scaleX(1); }
- 
+
     /* Mini abacus icon per card */
     .feature-icon {
       display: flex;
@@ -580,7 +580,7 @@
       z-index: 1;
       position: relative;
     }
- 
+
     .feature-title {
       font-family: 'Playfair Display', serif;
       font-size: 20px;
@@ -593,7 +593,7 @@
       font-size: 15px;
       line-height: 1.7;
     }
- 
+
     /* ─── KIDS IMAGE SECTION ──────────────────── */
     #gallery {
       padding: 100px 60px;
@@ -601,13 +601,13 @@
       position: relative;
       overflow: hidden;
     }
- 
+
     .gallery-bg-beads {
       position: absolute; inset: 0;
       pointer-events: none;
       overflow: hidden;
     }
- 
+
     /* Floating decorative beads in bg */
     .float-bead {
       position: absolute;
@@ -615,12 +615,12 @@
       opacity: 0.07;
       animation: floatBead 8s ease-in-out infinite;
     }
- 
+
     @keyframes floatBead {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
       50% { transform: translateY(-30px) rotate(180deg); }
     }
- 
+
     .gallery-layout {
       max-width: 1100px;
       margin: 0 auto;
@@ -629,24 +629,24 @@
       gap: 60px;
       align-items: center;
     }
- 
+
     .gallery-text { position: relative; z-index: 1; }
- 
+
     .gallery-text .section-title {
       color: var(--cream);
       text-align: left;
     }
     .gallery-text .section-title span { color: var(--gold); }
- 
+
     .gallery-text .section-label { text-align: left; }
- 
+
     .gallery-text p {
       color: #C0A080;
       font-size: 16px;
       line-height: 1.8;
       margin-bottom: 28px;
     }
- 
+
     /* Abacus row decoration */
     .deco-abacus-row {
       display: flex; gap: 6px; margin: 20px 0;
@@ -658,11 +658,11 @@
       transition: transform 0.2s;
     }
     .deco-bead-sm:hover { transform: scale(1.3) translateX(6px); }
- 
+
     .gallery-image-area {
       position: relative; z-index: 1;
     }
- 
+
     /* Abacus frame around image */
     .image-abacus-frame {
       background: linear-gradient(135deg, #7A4F2A, #5C3A1A, #7A4F2A);
@@ -674,7 +674,7 @@
         0 25px 60px rgba(0,0,0,0.5);
       position: relative;
     }
- 
+
     /* Rod overlays on image */
     .image-rods {
       position: absolute; inset: 20px;
@@ -688,7 +688,7 @@
       background: linear-gradient(180deg, transparent 5%, var(--wire) 15%, var(--wire) 85%, transparent 95%);
       border-radius: 2px;
     }
- 
+
     /* Placeholder kids image */
     .kids-image-placeholder {
       width: 100%;
@@ -703,7 +703,7 @@
       overflow: hidden;
       text-align: center;
     }
- 
+
     .kids-image-placeholder img {
       width: 100%;
       height: 100%;
@@ -711,7 +711,7 @@
       border-radius: 12px;
       position: absolute; inset: 0;
     }
- 
+
     .image-overlay-text {
       position: relative; z-index: 1;
       color: var(--gold);
@@ -719,26 +719,26 @@
       font-size: 18px;
       font-style: italic;
     }
- 
+
     /* SVG illustration of kids at abacus */
     .kids-illustration {
       width: 100%;
       aspect-ratio: 4/3;
       border-radius: 12px;
     }
- 
+
     /* ─── COURSES ─────────────────────────────── */
     #courses {
       padding: 100px 60px;
       background: var(--cream);
     }
- 
+
     .courses-header {
       text-align: center;
       max-width: 600px;
       margin: 0 auto 60px;
     }
- 
+
     .courses-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -746,7 +746,7 @@
       max-width: 1100px;
       margin: 0 auto;
     }
- 
+
     .course-card {
       border-radius: 16px;
       overflow: hidden;
@@ -759,7 +759,7 @@
       transform: translateY(-8px);
       box-shadow: 0 20px 50px rgba(26,18,9,0.15);
     }
- 
+
     .course-top {
       padding: 32px 28px 24px;
       position: relative;
@@ -773,7 +773,7 @@
       transition: transform 0.15s;
     }
     .course-bead-deco:hover { transform: scale(1.25) translateX(4px); }
- 
+
     .course-level {
       font-size: 10px;
       letter-spacing: 3px;
@@ -794,7 +794,7 @@
       font-size: 14px;
       line-height: 1.6;
     }
- 
+
     .course-bottom {
       padding: 20px 28px;
       border-top: 1px solid #F0E8DC;
@@ -827,7 +827,7 @@
       cursor: none;
     }
     .course-enroll:hover { background: var(--red); }
- 
+
     /* ─── ABACUS PROGRESS SECTION ─────────────── */
     #progress-bar-section {
       padding: 80px 60px;
@@ -847,7 +847,7 @@
       color: #7A5A40;
       margin-bottom: 50px;
     }
- 
+
     /* Abacus as progress bars */
     .abacus-progress {
       max-width: 700px;
@@ -856,7 +856,7 @@
       flex-direction: column;
       gap: 20px;
     }
- 
+
     .progress-row {
       display: flex;
       align-items: center;
@@ -903,29 +903,29 @@
       color: var(--dark);
       flex-shrink: 0;
     }
- 
+
     /* ─── TESTIMONIALS ─────────────────────────── */
     #testimonials {
       padding: 100px 60px;
       background: var(--dark);
     }
- 
+
     .testimonials-inner {
       max-width: 900px;
       margin: 0 auto;
     }
- 
+
     .testimonials-inner .section-title { color: var(--cream); }
     .testimonials-inner .section-title span { color: var(--gold); }
     .testimonials-inner .section-label { text-align: center; }
- 
+
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 24px;
       margin-top: 50px;
     }
- 
+
     .testimonial-card {
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
@@ -937,7 +937,7 @@
       background: rgba(255,255,255,0.08);
       transform: translateY(-4px);
     }
- 
+
     /* Beads as rating stars */
     .rating-beads {
       display: flex; gap: 5px; margin-bottom: 18px;
@@ -948,7 +948,7 @@
       background: var(--gold);
       box-shadow: 0 0 6px rgba(232,180,85,0.5);
     }
- 
+
     .testimonial-text {
       color: #C0A888;
       font-size: 14px;
@@ -966,7 +966,7 @@
       font-size: 12px;
       margin-top: 2px;
     }
- 
+
     /* ─── CTA SECTION ────────────────────────── */
     #cta {
       padding: 100px 60px;
@@ -975,7 +975,7 @@
       position: relative;
       overflow: hidden;
     }
- 
+
     /* Abacus rod decoration */
     .cta-rods {
       position: absolute;
@@ -993,7 +993,7 @@
       position: relative;
       border-radius: 3px;
     }
- 
+
     .cta-title {
       font-family: 'Playfair Display', serif;
       font-size: clamp(36px, 6vw, 68px);
@@ -1013,7 +1013,7 @@
       z-index: 1;
       line-height: 1.7;
     }
- 
+
     .cta-beads-row {
       display: flex; gap: 8px; justify-content: center; margin-bottom: 36px;
       position: relative; z-index: 1;
@@ -1029,7 +1029,7 @@
       background: rgba(255,255,255,0.9);
       transform: scale(1.3) translateY(-4px);
     }
- 
+
     .btn-white {
       background: #fff;
       color: var(--red);
@@ -1050,7 +1050,7 @@
       transform: translateY(-3px);
       box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     }
- 
+
     /* ─── FOOTER ──────────────────────────────── */
     footer {
       background: #0E0A04;
@@ -1063,7 +1063,7 @@
       grid-template-columns: 2fr 1fr 1fr 1fr;
       gap: 50px;
     }
- 
+
     .footer-brand .nav-logo {
       font-size: 22px;
       color: var(--cream);
@@ -1075,7 +1075,7 @@
       font-size: 14px;
       line-height: 1.7;
     }
- 
+
     /* Footer abacus row */
     .footer-bead-row {
       display: flex; gap: 5px; margin-top: 20px;
@@ -1087,7 +1087,7 @@
       transition: transform 0.15s;
     }
     .footer-bead:hover { transform: scale(1.4) translateY(-2px); }
- 
+
     .footer-col h4 {
       font-family: 'Playfair Display', serif;
       font-size: 16px;
@@ -1106,7 +1106,7 @@
       transition: color 0.2s;
     }
     .footer-col a:hover { color: var(--gold); }
- 
+
     .footer-bottom {
       border-top: 1px solid #2A1A0A;
       margin-top: 50px;
@@ -1122,7 +1122,7 @@
       color: #4A3A2A;
       font-size: 13px;
     }
- 
+
     /* ─── ANIMATIONS ──────────────────────────── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
@@ -1136,12 +1136,12 @@
     .delay-3 { animation-delay: 0.3s; }
     .delay-4 { animation-delay: 0.4s; }
     .delay-5 { animation-delay: 0.6s; }
- 
+
     @keyframes shimmer {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.6; }
     }
- 
+
     /* Abacus wire rod running through hero top */
     .hero-abacus-deco {
       display: flex;
@@ -1177,7 +1177,7 @@
     .hero-deco-bead:hover {
       transform: scale(1.2) !important;
     }
- 
+
     /* Scroll indicator */
     .scroll-hint {
       position: absolute;
@@ -1204,7 +1204,7 @@
       50% { transform: scaleY(1); opacity: 1; }
       100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
     }
- 
+
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
       .nav-links { display: none; }
@@ -1218,11 +1218,11 @@
   </style>
 </head>
 <body>
- 
+
   <!-- Custom cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-trail" id="cursorTrail"></div>
- 
+
   <!-- ─── NAVBAR ─────────────────────────────── -->
   <nav>
     <div class="nav-logo">
@@ -1245,10 +1245,10 @@
       <li><a href="#courses">Course</a></li>
       <li><a href="#gallery">Our Students</a></li>
       <li><a href="#testimonials">Reviews</a></li>
-      <li><a href="#cta" class="nav-cta">Book Demo Class</a></li>
+      <li><a href="demo.html" class="nav-cta">Book Demo Class</a></li>
     </ul>
   </nav>
- 
+
   <!-- ─── HERO ────────────────────────────────── -->
   <section id="hero">
     <div class="hero-bg-pattern"></div>
@@ -1262,27 +1262,27 @@
         A 100% online abacus course for children — live classes from the comfort of your home. Build lightning-fast mental math skills with expert instructors and a proven curriculum, all delivered digitally.
       </p>
       <div class="hero-btns fade-up delay-4">
-        <a href="#cta" class="btn-primary">Book a Demo Class →</a>
+        <a href="demo.html" class="btn-primary">Book a Demo Class →</a>
         <a href="#courses" class="btn-secondary">View Course</a>
       </div>
     </div>
- 
+
     <!-- Decorative interactive abacus row in hero -->
     <div class="hero-abacus-deco fade-up delay-5" id="heroAbacus">
     </div>
- 
+
     <div class="scroll-hint">
       <div class="scroll-line"></div>
       Scroll
     </div>
   </section>
- 
+
   <!-- ─── INTERACTIVE ABACUS ────────────────── -->
   <section id="interactive-abacus">
     <p class="section-label">Try It Yourself</p>
     <h2 class="section-title abacus-title">Click the <span>Beads</span></h2>
     <p class="abacus-subtitle">The centre column is <strong style="color:var(--gold)">1</strong>. Columns to the left are ×10, ×100, ×1000. Columns to the right are ×0.1, ×0.01, ×0.001.</p>
- 
+
     <!-- Tech stack badges -->
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:36px;">
       <span style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);color:#C4894A;font-size:11px;font-weight:700;letter-spacing:2px;padding:5px 14px;border-radius:20px;font-family:'DM Sans',sans-serif;">C</span>
@@ -1291,7 +1291,7 @@
       <span style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);color:#C4894A;font-size:11px;font-weight:700;letter-spacing:2px;padding:5px 14px;border-radius:20px;font-family:'DM Sans',sans-serif;">CSS</span>
       <span style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);color:#9A8070;font-size:11px;letter-spacing:1px;padding:5px 14px;border-radius:20px;font-family:'DM Sans',sans-serif;">Built with modern web tech</span>
     </div>
- 
+
     <div class="abacus-wrapper" style="max-width:980px;">
       <div class="abacus-frame">
         <!-- Column headers above frame -->
@@ -1306,7 +1306,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- ─── STATS ──────────────────────────────── -->
   <section id="stats">
     <div class="stat-item">
@@ -1346,7 +1346,7 @@
       <div class="stat-label">Online — Learn Anywhere</div>
     </div>
   </section>
- 
+
   <!-- ─── FEATURES ──────────────────────────── -->
   <section id="features">
     <div class="features-header">
@@ -1354,7 +1354,7 @@
       <h2 class="section-title section-title-dark">Built for Every <span>Young Mind</span></h2>
     </div>
     <div class="features-grid">
- 
+
       <div class="feature-card">
         <div class="feature-icon">
           <div class="feature-icon-rod">
@@ -1376,7 +1376,7 @@
         <h3 class="feature-title">Live Online Classes</h3>
         <p class="feature-text">Real-time sessions with certified abacus instructors. Small batches of 6–8 students ensure personalized attention for every child.</p>
       </div>
- 
+
       <div class="feature-card">
         <div class="feature-icon">
           <div class="feature-icon-rod">
@@ -1395,7 +1395,7 @@
         <h3 class="feature-title">Mental Math Mastery</h3>
         <p class="feature-text">Children learn to calculate large sums in seconds using only their mind — a skill that boosts confidence and academic performance.</p>
       </div>
- 
+
       <div class="feature-card">
         <div class="feature-icon">
           <div class="feature-icon-rod">
@@ -1417,7 +1417,7 @@
         <h3 class="feature-title">Structured 8-Level Curriculum</h3>
         <p class="feature-text">From basic bead counting to multi-digit multiplication — our step-by-step program grows with your child at a comfortable pace.</p>
       </div>
- 
+
       <div class="feature-card">
         <div class="feature-icon">
           <div class="feature-icon-rod">
@@ -1437,7 +1437,7 @@
         <h3 class="feature-title">Progress Tracking</h3>
         <p class="feature-text">Parents receive weekly reports with detailed insights, speed scores, and accuracy metrics for every session their child attends.</p>
       </div>
- 
+
       <div class="feature-card">
         <div class="feature-icon">
           <div class="feature-icon-rod">
@@ -1459,7 +1459,7 @@
         <h3 class="feature-title">Flexible Scheduling</h3>
         <p class="feature-text">Morning, afternoon, or weekend batches available across all time zones. Never miss a class with our recording access policy.</p>
       </div>
- 
+
       <div class="feature-card">
         <div class="feature-icon">
           <div class="feature-icon-rod">
@@ -1480,10 +1480,10 @@
         <h3 class="feature-title">National Competitions</h3>
         <p class="feature-text">Students compete in our annual Abacus Olympiad and national championships, earning certificates, trophies, and scholarships.</p>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- ─── GALLERY / KIDS SECTION ─────────────── -->
   <section id="gallery">
     <div class="gallery-bg-beads" id="bgBeads"></div>
@@ -1494,9 +1494,9 @@
         <div class="deco-abacus-row" id="decoRow"></div>
         <p>Our students aged 4 to 14 develop a deep love for numbers through hands-on abacus learning. Watch their confidence soar as they solve complex problems with ease.</p>
         <p>Every child's journey is unique — our instructors meet them exactly where they are and guide them all the way to mastery.</p>
-        <a href="#cta" class="btn-primary" style="display:inline-block;">Book a Demo Class →</a>
+        <a href="demo.html" class="btn-primary" style="display:inline-block;">Book a Demo Class →</a>
       </div>
- 
+
       <div class="gallery-image-area">
         <div class="image-abacus-frame">
           <div class="image-rods" id="imageRods"></div>
@@ -1522,23 +1522,23 @@
                   <stop offset="100%" stop-color="#E0A060"/>
                 </radialGradient>
               </defs>
- 
+
               <rect width="480" height="360" fill="url(#bg)"/>
- 
+
               <!-- Warm ambient glow -->
               <ellipse cx="240" cy="180" rx="200" ry="140" fill="rgba(200,120,40,0.08)"/>
- 
+
               <!-- TABLE -->
               <rect x="40" y="240" width="400" height="20" rx="6" fill="#8B5E3C"/>
               <rect x="60" y="258" width="16" height="80" rx="4" fill="#7A4F2A"/>
               <rect x="404" y="258" width="16" height="80" rx="4" fill="#7A4F2A"/>
- 
+
               <!-- ABACUS ON TABLE -->
               <rect x="120" y="180" width="240" height="60" rx="8" fill="#9A6030"/>
               <rect x="120" y="180" width="240" height="60" rx="8" fill="none" stroke="#C4894A" stroke-width="3"/>
               <!-- divider bar -->
               <rect x="120" y="208" width="240" height="8" rx="3" fill="#7A4020"/>
- 
+
               <!-- Abacus rods -->
               <line x1="148" y1="184" x2="148" y2="236" stroke="#5A3010" stroke-width="3"/>
               <line x1="175" y1="184" x2="175" y2="236" stroke="#5A3010" stroke-width="3"/>
@@ -1548,7 +1548,7 @@
               <line x1="283" y1="184" x2="283" y2="236" stroke="#5A3010" stroke-width="3"/>
               <line x1="310" y1="184" x2="310" y2="236" stroke="#5A3010" stroke-width="3"/>
               <line x1="337" y1="184" x2="337" y2="236" stroke="#5A3010" stroke-width="3"/>
- 
+
               <!-- Upper beads (red) -->
               <ellipse cx="148" cy="196" rx="11" ry="8" fill="#D94F3D"/><ellipse cx="148" cy="196" rx="6" ry="4" fill="rgba(255,180,160,0.3)"/>
               <ellipse cx="175" cy="200" rx="11" ry="8" fill="#D94F3D"/><ellipse cx="175" cy="200" rx="6" ry="4" fill="rgba(255,180,160,0.3)"/>
@@ -1558,7 +1558,7 @@
               <ellipse cx="283" cy="200" rx="11" ry="8" fill="#7B4FA0"/><ellipse cx="283" cy="200" rx="6" ry="4" fill="rgba(180,140,240,0.3)"/>
               <ellipse cx="310" cy="196" rx="11" ry="8" fill="#D94F3D"/><ellipse cx="310" cy="196" rx="6" ry="4" fill="rgba(255,180,160,0.3)"/>
               <ellipse cx="337" cy="200" rx="11" ry="8" fill="#C09020"/><ellipse cx="337" cy="200" rx="6" ry="4" fill="rgba(255,230,100,0.3)"/>
- 
+
               <!-- Lower beads -->
               <ellipse cx="148" cy="224" rx="11" ry="8" fill="#E87060"/>
               <ellipse cx="175" cy="228" rx="11" ry="8" fill="#5080D0"/>
@@ -1568,7 +1568,7 @@
               <ellipse cx="283" cy="224" rx="11" ry="8" fill="#A070C0"/>
               <ellipse cx="310" cy="228" rx="11" ry="8" fill="#5080D0"/>
               <ellipse cx="337" cy="224" rx="11" ry="8" fill="#D4B050"/>
- 
+
               <!-- CHILD 1 (left) -->
               <!-- Body -->
               <path d="M100 240 Q90 210 100 190 Q110 170 130 175 Q150 180 148 200 Q148 225 140 240 Z" fill="#3A85C0"/>
@@ -1585,7 +1585,7 @@
               <path d="M112 168 Q122 178 132 168" stroke="#8B3020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
               <!-- Arm pointing at abacus -->
               <path d="M140 205 Q155 215 175 210" stroke="#D4985A" stroke-width="8" stroke-linecap="round" fill="none"/>
- 
+
               <!-- CHILD 2 (right) -->
               <!-- Body -->
               <path d="M380 240 Q390 210 380 190 Q370 170 350 175 Q330 180 332 200 Q332 225 340 240 Z" fill="#D94F3D"/>
@@ -1604,24 +1604,24 @@
               <path d="M348 168 Q358 180 368 168" stroke="#8B2010" stroke-width="2.5" fill="none" stroke-linecap="round"/>
               <!-- Arm -->
               <path d="M340 205 Q325 215 305 210" stroke="#E8A870" stroke-width="8" stroke-linecap="round" fill="none"/>
- 
+
               <!-- Thought bubble child 1 -->
               <circle cx="80" cy="128" r="18" fill="rgba(255,255,255,0.12)"/>
               <text x="72" y="134" font-family="serif" font-size="16" fill="#FFD080" font-weight="bold">2+3</text>
               <circle cx="94" cy="148" r="5" fill="rgba(255,255,255,0.1)"/>
               <circle cx="100" cy="155" r="3" fill="rgba(255,255,255,0.08)"/>
- 
+
               <!-- Thought bubble child 2 -->
               <circle cx="400" cy="128" r="18" fill="rgba(255,255,255,0.12)"/>
               <text x="390" y="134" font-family="serif" font-size="16" fill="#FFD080" font-weight="bold">=5!</text>
               <circle cx="386" cy="148" r="5" fill="rgba(255,255,255,0.1)"/>
               <circle cx="380" cy="155" r="3" fill="rgba(255,255,255,0.08)"/>
- 
+
               <!-- Stars / sparkles -->
               <text x="210" y="155" font-size="18" fill="#FFD080" opacity="0.8">★</text>
               <text x="255" y="148" font-size="14" fill="#E87060" opacity="0.7">✦</text>
               <text x="230" y="170" font-size="10" fill="#60B080" opacity="0.7">✦</text>
- 
+
               <!-- Label -->
               <text x="240" y="330" text-anchor="middle" font-family="serif" font-size="14" fill="#C4894A" font-style="italic">Our students love learning together</text>
             </svg>
@@ -1630,7 +1630,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- ─── COURSES ────────────────────────────── -->
   <section id="courses">
     <div class="courses-header">
@@ -1638,7 +1638,7 @@
       <h2 class="section-title section-title-dark">Our <span>Course</span></h2>
     </div>
     <div style="max-width:520px; margin:0 auto;">
- 
+
       <div class="course-card" style="position:relative; overflow:hidden;">
         <div style="position:absolute;top:16px;right:16px;background:var(--gold);color:var(--dark);font-size:10px;font-weight:800;letter-spacing:2px;padding:5px 14px;border-radius:20px;">ONLINE ONLY</div>
         <div class="course-top" style="background: linear-gradient(135deg, #FFF5EE, #FFF0E6); padding: 40px 36px 30px;">
@@ -1656,7 +1656,7 @@
           </div>
           <ul style="margin-top:20px; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:9px;">
             <li style="display:flex; align-items:center; gap:10px; color:#5A4030; font-size:14px;">
-              <span style="width:18px;height:12px;border-radius:50%;background:var(--bead-green);flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,0.2);"></span> Live online classes 3× per week
+              <span style="width:18px;height:12px;border-radius:50%;background:var(--bead-green);flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,0.2);"></span> Live online class 1× per week
             </li>
             <li style="display:flex; align-items:center; gap:10px; color:#5A4030; font-size:14px;">
               <span style="width:18px;height:12px;border-radius:50%;background:var(--bead-blue);flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,0.2);"></span> All 8 levels included — beginner to advanced
@@ -1680,13 +1680,13 @@
             <div class="course-price" style="font-size:32px;">₹800<span style="font-size:14px; color:#9A7060;">/month</span></div>
             <div style="font-size:12px; color:#9A7060; margin-top:3px;">No registration fee · Cancel anytime</div>
           </div>
-          <a href="#cta" class="course-enroll" style="padding:13px 28px; font-size:14px;">Enroll Now</a>
+          <a href="enroll.html" class="course-enroll" style="padding:13px 28px; font-size:14px;">Enroll Now</a>
         </div>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- ─── ABACUS PROGRESS BARS ───────────────── -->
   <section id="progress-bar-section">
     <h2 class="progress-title">Skills We <span>Build</span></h2>
@@ -1695,14 +1695,14 @@
       <!-- Rendered by JS -->
     </div>
   </section>
- 
+
   <!-- ─── TESTIMONIALS ──────────────────────── -->
   <section id="testimonials">
     <div class="testimonials-inner">
       <p class="section-label">What Parents Say</p>
       <h2 class="section-title" style="text-align:center;">Real <span>Results</span></h2>
       <div class="testimonials-grid">
- 
+
         <div class="testimonial-card">
           <div class="rating-beads">
             <div class="rating-bead"></div><div class="rating-bead"></div>
@@ -1713,7 +1713,7 @@
           <div class="testimonial-name">Priya Sharma</div>
           <div class="testimonial-role">Mother of Ananya, Age 8 · Delhi</div>
         </div>
- 
+
         <div class="testimonial-card">
           <div class="rating-beads">
             <div class="rating-bead"></div><div class="rating-bead"></div>
@@ -1724,7 +1724,7 @@
           <div class="testimonial-name">Rajesh Patel</div>
           <div class="testimonial-role">Father of Arjun, Age 10 · Mumbai</div>
         </div>
- 
+
         <div class="testimonial-card">
           <div class="rating-beads">
             <div class="rating-bead"></div><div class="rating-bead"></div>
@@ -1735,11 +1735,11 @@
           <div class="testimonial-name">Meena Krishnan</div>
           <div class="testimonial-role">Mother of Siddharth, Age 7 · Bangalore</div>
         </div>
- 
+
       </div>
     </div>
   </section>
- 
+
   <!-- ─── CTA ────────────────────────────────── -->
   <section id="cta">
     <div class="cta-rods">
@@ -1754,9 +1754,9 @@
       <div class="cta-bead"></div><div class="cta-bead"></div><div class="cta-bead"></div>
       <div class="cta-bead"></div><div class="cta-bead"></div><div class="cta-bead"></div>
     </div>
-    <a href="#" class="btn-white">Book Your Demo Class →</a>
+    <a href="demo.html" class="btn-white">Book Your Demo Class →</a>
   </section>
- 
+
   <!-- ─── FOOTER ─────────────────────────────── -->
   <footer>
     <div class="footer-inner">
@@ -1822,15 +1822,15 @@
       <p style="color:#3A2A1A;">Crafted with ♥ for every young mathematician</p>
     </div>
   </footer>
- 
- 
+
+
 <script>
   // ─── CUSTOM CURSOR ─────────────────────────
   const cursor = document.getElementById('cursor');
   const trail = document.getElementById('cursorTrail');
   const colors = ['#D94F3D','#2E5FA3','#3A8C5C','#E07A32','#7B4FA0','#E8B455'];
   let colorIdx = 0;
- 
+
   document.addEventListener('mousemove', e => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
@@ -1839,7 +1839,7 @@
       trail.style.top = e.clientY + 'px';
     }, 60);
   });
- 
+
   document.querySelectorAll('a, button, .bead, .course-bead-deco, .logo-bead, .deco-bead-sm, .footer-bead, .cta-bead').forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.style.transform = 'translate(-50%,-50%) scale(1.6)';
@@ -1851,21 +1851,21 @@
       cursor.style.background = '#D94F3D';
     });
   });
- 
+
   // ─── HERO DECO ABACUS ──────────────────────
   const heroAbacus = document.getElementById('heroAbacus');
   const heroColors = ['#D94F3D','#2E5FA3','#3A8C5C','#E07A32','#7B4FA0','#E8B455','#D94F3D','#3A8C5C','#2E5FA3'];
   const beadCounts = [3,2,4,3,2,3,4,2,3];
- 
+
   heroColors.forEach((color, ci) => {
     const col = document.createElement('div');
     col.className = 'hero-deco-col';
     col.style.cssText = 'display:flex;flex-direction:column;align-items:center;gap:5px;position:relative;padding:8px 0;';
- 
+
     const rod = document.createElement('div');
     rod.style.cssText = `position:absolute;top:0;bottom:0;width:3px;background:${getComputedStyle(document.documentElement).getPropertyValue('--wire') || '#6B4A2A'};z-index:0;border-radius:2px;opacity:0.5;`;
     col.appendChild(rod);
- 
+
     for (let b = 0; b < beadCounts[ci]; b++) {
       const bead = document.createElement('div');
       bead.className = 'hero-deco-bead';
@@ -1878,7 +1878,7 @@
     }
     heroAbacus.appendChild(col);
   });
- 
+
   // ─── MAIN INTERACTIVE ABACUS ───────────────
   // 7 columns: 1000 | 100 | 10 | [1 = CENTRE] | 0.1 | 0.01 | 0.001
   // Each column: 1 upper bead (×5) + 4 lower beads (×1 each) — standard soroban
@@ -1895,30 +1895,30 @@
     'radial-gradient(circle at 35% 35%, #E87060, #D94F3D, #8B1A0A)',
     'radial-gradient(circle at 35% 35%, #60B080, #3A8C5C, #1A5030)',
   ];
- 
+
   let upperActive = new Array(COLS).fill(false);
   let lowerActive = Array.from({length: COLS}, () => [false,false,false,false]);
- 
+
   function buildAbacus() {
     const container = document.getElementById('abacusRods');
     const headers   = document.getElementById('abacusHeaders');
     container.innerHTML = '';
     headers.innerHTML   = '';
- 
+
     colValues.forEach((val, ci) => {
       // ── header label ──
       const hdr = document.createElement('div');
       hdr.style.cssText = `flex:1;text-align:center;font-size:${colIsCenter[ci] ? '15px' : '11px'};font-weight:${colIsCenter[ci] ? '900' : '700'};color:${colIsCenter[ci] ? '#E8B455' : '#9A8070'};letter-spacing:1px;font-family:'DM Sans',sans-serif;padding:0 4px;border-bottom:${colIsCenter[ci] ? '2px solid #E8B455' : 'none'};`;
       hdr.textContent = colLabels[ci];
       headers.appendChild(hdr);
- 
+
       // ── column ──
       const col = document.createElement('div');
       col.className = `abacus-col col-${ci}`;
       if (colIsCenter[ci]) {
         col.style.cssText = 'border-left:2px dashed rgba(232,180,85,0.35);border-right:2px dashed rgba(232,180,85,0.35);';
       }
- 
+
       // upper section (1 bead = 5 × colValue)
       const upper = document.createElement('div');
       upper.className = 'upper-section';
@@ -1932,12 +1932,12 @@
       });
       upper.appendChild(uBead);
       col.appendChild(upper);
- 
+
       // divider gap
       const gap = document.createElement('div');
       gap.style.height = '14px';
       col.appendChild(gap);
- 
+
       // lower section (4 beads = 1 × colValue each)
       const lower = document.createElement('div');
       lower.className = 'lower-section';
@@ -1958,11 +1958,11 @@
         lower.appendChild(lBead);
       }
       col.appendChild(lower);
- 
+
       container.appendChild(col);
     });
   }
- 
+
   function updateValue() {
     let total = 0;
     for (let ci = 0; ci < COLS; ci++) {
@@ -1972,7 +1972,7 @@
     }
     // Round to 3 decimal places to avoid float noise
     total = Math.round(total * 1000) / 1000;
- 
+
     // Smart formatting: show decimals only if needed
     let display;
     if (Number.isInteger(total)) {
@@ -1985,15 +1985,15 @@
     }
     document.getElementById('abacusValue').textContent = display;
   }
- 
+
   function resetAbacus() {
     upperActive = new Array(COLS).fill(false);
     lowerActive = Array.from({length: COLS}, () => [false,false,false,false]);
     buildAbacus(); updateValue();
   }
- 
+
   buildAbacus();
- 
+
   // ─── PROGRESS BARS ─────────────────────────
   const skills = [
     { label: 'Mental Math', pct: 94, color: '#D94F3D' },
@@ -2002,23 +2002,23 @@
     { label: 'Accuracy', pct: 96, color: '#E07A32' },
     { label: 'Confidence', pct: 85, color: '#7B4FA0' },
   ];
- 
+
   const pbContainer = document.getElementById('progressBars');
   skills.forEach(skill => {
     const row = document.createElement('div');
     row.className = 'progress-row';
- 
+
     const lbl = document.createElement('div');
     lbl.className = 'progress-label';
     lbl.textContent = skill.label;
- 
+
     const track = document.createElement('div');
     track.className = 'progress-track';
- 
+
     const fill = document.createElement('div');
     fill.className = 'progress-fill';
     fill.style.cssText = `background: linear-gradient(90deg, ${skill.color}dd, ${skill.color}); width: 0%;`;
- 
+
     const beadCount = Math.floor(skill.pct / 12);
     for (let i = 0; i < beadCount; i++) {
       const b = document.createElement('div');
@@ -2026,16 +2026,16 @@
       fill.appendChild(b);
     }
     track.appendChild(fill);
- 
+
     const pct = document.createElement('div');
     pct.className = 'progress-pct';
     pct.textContent = skill.pct + '%';
- 
+
     row.appendChild(lbl);
     row.appendChild(track);
     row.appendChild(pct);
     pbContainer.appendChild(row);
- 
+
     // Animate on scroll
     const obs = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -2047,7 +2047,7 @@
     }, { threshold: 0.4 });
     obs.observe(row);
   });
- 
+
   // ─── DECO ROW (GALLERY) ────────────────────
   const decoRow = document.getElementById('decoRow');
   const decoColors = ['#D94F3D','#2E5FA3','#3A8C5C','#E07A32','#7B4FA0','#E8B455','#D94F3D'];
@@ -2057,7 +2057,7 @@
     b.style.background = `radial-gradient(circle at 35% 35%, ${c}cc, ${c})`;
     decoRow.appendChild(b);
   });
- 
+
   // ─── IMAGE RODS ─────────────────────────────
   const imageRods = document.getElementById('imageRods');
   for (let i = 0; i < 7; i++) {
@@ -2065,7 +2065,7 @@
     r.className = 'image-rod';
     imageRods.appendChild(r);
   }
- 
+
   // ─── BG FLOATING BEADS ────────────────────
   const bgBeads = document.getElementById('bgBeads');
   const floatColors = ['#D94F3D','#2E5FA3','#3A8C5C','#E07A32','#7B4FA0','#E8B455'];
@@ -2084,7 +2084,7 @@
     `;
     bgBeads.appendChild(b);
   }
- 
+
   // ─── SCROLL REVEAL ─────────────────────────
   const revealObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
@@ -2094,7 +2094,7 @@
       }
     });
   }, { threshold: 0.15 });
- 
+
   document.querySelectorAll('.feature-card, .course-card, .testimonial-card, .stat-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(24px)';
@@ -2104,4 +2104,3 @@
 </script>
 </body>
 </html>
- 
