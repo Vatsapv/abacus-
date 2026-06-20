@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Enroll Now — ABACUS</title>
+  <title>Enroll Now — SOROBAN</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     :root {
@@ -142,7 +142,7 @@
           <div class="logo-bead" style="background:#7B4FA0"></div>
         </div>
       </div>
-      ABACUS
+      SOROBAN
     </a>
     <a href="index.html" class="back-link">← Back to Home</a>
   </nav>
@@ -196,14 +196,14 @@
           <div class="c-ico" style="background:rgba(37,211,102,.15);">📞</div>
           <div>
             <div class="c-lbl">Phone / WhatsApp</div>
-            <a href="tel:+919431584496" class="c-v">+91 94315 84496</a>
+            <a href="tel:+919430281675" class="c-v">+91 94302 81675</a>
           </div>
         </div>
         <div class="c-row">
           <div class="c-ico" style="background:rgba(46,95,163,.2);">✉️</div>
           <div>
             <div class="c-lbl">Email</div>
-            <a href="mailto:snehadbg2@gmail.com" class="c-v">snehadbg2@gmail.com</a>
+            <a href="mailto:sorobanclasses05@gmail.com" class="c-v">sorobanclasses05@gmail.com</a>
           </div>
         </div>
       </div>
@@ -221,30 +221,33 @@
           <h2 class="form-heading">Student Enrollment Form</h2>
           <p class="form-note">We'll review your details and reach out within 24 hours to confirm your first class.</p>
 
+          <form id="enrollForm">
+          <input type="hidden" name="Form Type" value="Course Enrollment"/>
+          <input type="hidden" name="_subject" value="New Enrollment — Soroban"/>
           <div class="two-col">
             <div class="field-group">
               <label>Parent / Guardian *</label>
-              <input type="text" id="parentName" placeholder="Full name" required/>
+              <input type="text" id="parentName" name="Parent Name" placeholder="Full name" required/>
             </div>
             <div class="field-group">
               <label>Phone / WhatsApp *</label>
-              <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required/>
+              <input type="tel" id="phone" name="Phone" placeholder="+91 XXXXX XXXXX" required/>
             </div>
           </div>
 
           <div class="field-group">
             <label>Email Address *</label>
-            <input type="email" id="email" placeholder="your@email.com" required/>
+            <input type="email" id="email" name="Email" placeholder="your@email.com" required/>
           </div>
 
           <div class="two-col">
             <div class="field-group">
               <label>Child's Name *</label>
-              <input type="text" id="childName" placeholder="Child's full name" required/>
+              <input type="text" id="childName" name="Child's Name" placeholder="Child's full name" required/>
             </div>
             <div class="field-group">
               <label>Child's Age *</label>
-              <select id="age" required>
+              <select id="age" name="Child's Age" required>
                 <option value="" disabled selected>Age</option>
                 <option>5 yrs</option><option>6 yrs</option><option>7 yrs</option><option>8 yrs</option>
                 <option>9 yrs</option><option>10 yrs</option><option>11 yrs</option><option>12 yrs</option>
@@ -256,7 +259,7 @@
           <div class="two-col">
             <div class="field-group">
               <label>Child's Class / Grade</label>
-              <select id="grade">
+              <select id="grade" name="Grade">
                 <option value="" disabled selected>Grade</option>
                 <option>Pre-School</option><option>Grade 1</option><option>Grade 2</option><option>Grade 3</option>
                 <option>Grade 4</option><option>Grade 5</option><option>Grade 6</option><option>Grade 7</option>
@@ -265,7 +268,7 @@
             </div>
             <div class="field-group">
               <label>Prior Abacus Experience</label>
-              <select id="experience">
+              <select id="experience" name="Prior Experience">
                 <option value="" disabled selected>Select</option>
                 <option>None — complete beginner</option>
                 <option>Some — tried before</option>
@@ -276,7 +279,7 @@
 
           <div class="field-group">
             <label>Preferred Class Day *</label>
-            <select id="day" required>
+            <select id="day" name="Preferred Day" required>
               <option value="" disabled selected>Choose a day</option>
               <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
               <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
@@ -285,7 +288,7 @@
 
           <div class="field-group">
             <label>Preferred Time Slot *</label>
-            <select id="slot" required>
+            <select id="slot" name="Preferred Time Slot" required>
               <option value="" disabled selected>Choose a time</option>
               <option>Morning — 8:00 AM to 10:00 AM</option>
               <option>Late Morning — 10:00 AM to 12:00 PM</option>
@@ -297,26 +300,27 @@
 
           <div class="field-group">
             <label>City / Location</label>
-            <input type="text" id="city" placeholder="Your city"/>
+            <input type="text" id="city" name="City" placeholder="Your city"/>
           </div>
 
           <div class="field-group">
             <label>Any Message</label>
-            <textarea id="message" placeholder="Questions, special requirements, or anything else we should know…"></textarea>
+            <textarea id="message" name="Message" placeholder="Questions, special requirements, or anything else we should know…"></textarea>
           </div>
 
           <div class="checkbox-row">
             <input type="checkbox" id="agree"/>
-            <span>I understand this is a 100% online course (₹800/month, 1 class per week) and agree to be contacted by the Abacus team to confirm enrollment.</span>
+            <span>I understand this is a 100% online course (₹800/month, 1 class per week) and agree to be contacted by the Soroban team to confirm enrollment.</span>
           </div>
 
-          <button class="submit-btn" onclick="submitEnroll()">Confirm My Enrollment →</button>
+          <button type="submit" class="submit-btn">Confirm My Enrollment →</button>
 
           <div class="or-divider">OR REACH US DIRECTLY</div>
 
-          <button class="wa-btn" onclick="window.open('https://wa.me/919431584496?text=Hi%2C%20I%20want%20to%20enroll%20my%20child%20in%20the%20Abacus%20online%20course.','_blank')">
-            💬 &nbsp;WhatsApp Us — +91 94315 84496
+          <button type="button" class="wa-btn" onclick="window.open('https://wa.me/919430281675?text=Hi%2C%20I%20want%20to%20enroll%20my%20child%20in%20the%20Soroban%20online%20course.','_blank')">
+            💬 &nbsp;WhatsApp Us — +91 94302 81675
           </button>
+          </form>
         </div>
 
         <div class="success-screen" id="successArea">
@@ -331,8 +335,8 @@
           <p>
             Thank you for enrolling! We'll review your details and get back to you within 24 hours to confirm your first class slot and share joining instructions.<br><br>
             For faster confirmation, reach us at:<br>
-            <strong style="color:var(--gold);">📞 +91 94315 84496</strong><br>
-            <strong style="color:var(--gold);">✉️ snehadbg2@gmail.com</strong>
+            <strong style="color:var(--gold);">📞 +91 94302 81675</strong><br>
+            <strong style="color:var(--gold);">✉️ sorobanclasses05@gmail.com</strong>
           </p>
           <a href="index.html" class="back-btn">← Back to Home</a>
         </div>
@@ -365,31 +369,52 @@
       rodStrip.appendChild(rod);
     });
 
-    function submitEnroll() {
+    const enrollForm = document.getElementById('enrollForm');
+    enrollForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
       if (!document.getElementById('agree').checked) {
         const cb = document.getElementById('agree');
-        cb.style.outline='2px solid #E8B455';
-        setTimeout(()=>cb.style.outline='',2000);
+        cb.style.outline = '2px solid #E8B455';
+        setTimeout(() => cb.style.outline = '', 2000);
         return;
       }
-      const required = [
-        {id:'parentName'},{id:'phone'},{id:'email'},
-        {id:'childName'},{id:'age'},{id:'day'},{id:'slot'}
-      ];
-      for (const f of required) {
-        const el = document.getElementById(f.id);
+
+      const required = ['parentName','phone','email','childName','age','day','slot'];
+      for (const id of required) {
+        const el = document.getElementById(id);
         if (!el.value.trim()) {
           el.focus();
-          el.style.borderColor='var(--gold)';
-          el.style.boxShadow='0 0 0 4px rgba(232,180,85,.15)';
-          setTimeout(()=>{ el.style.borderColor=''; el.style.boxShadow=''; },2500);
+          el.style.borderColor = 'var(--gold)';
+          el.style.boxShadow = '0 0 0 4px rgba(232,180,85,.15)';
+          setTimeout(() => { el.style.borderColor=''; el.style.boxShadow=''; }, 2500);
           return;
         }
       }
-      document.getElementById('formArea').style.display='none';
-      const s = document.getElementById('successArea');
-      s.style.display='block';
-    }
+
+      const submitBtn = enrollForm.querySelector('.submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch('https://formspree.io/f/xojzgynp', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(enrollForm)
+      }).then(response => {
+        if (response.ok) {
+          document.getElementById('formArea').style.display = 'none';
+          document.getElementById('successArea').style.display = 'block';
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Confirm My Enrollment →';
+          alert('Something went wrong submitting your enrollment. Please try again or contact us directly at sorobanclasses05@gmail.com');
+        }
+      }).catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Confirm My Enrollment →';
+        alert('Network error. Please try again or contact us directly at sorobanclasses05@gmail.com');
+      });
+    });
   </script>
 </body>
 </html>
